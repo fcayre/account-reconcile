@@ -73,7 +73,7 @@ class MassReconcileBase(models.AbstractModel):
     @api.multi
     def _where(self, *args, **kwargs):
         where = ("WHERE account_move_line.account_id = %s "
-                 "AND NOT account_move_line.reconciled")
+                 "AND account_move_line.reconciled IS NOT TRUE")
         # it would be great to use dict for params
         # but as we use _where_calc in _get_filter
         # which returns a list, we have to
