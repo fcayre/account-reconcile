@@ -79,7 +79,7 @@ class StripeParser(AccountMoveImportParser):
                 continue
             self.move_ref = payout['id']
             self.move_date = date.fromtimestamp(payout['arrival_date'])
-            self.result_row_list = stripe.BalanceTransaction.all(
+            self.result_row_list = stripe.BalanceTransaction.list(
                 payout=payout['id'], api_key=api_key, limit=1000)['data']
             fee_vals = defaultdict(float)
             for line in self.result_row_list:
