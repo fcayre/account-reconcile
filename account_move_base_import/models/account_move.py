@@ -303,7 +303,7 @@ class AccountMoveLine(models.Model):
         except psycopg2.Error as sql_err:
             self.env.cr.rollback()
             raise ValidationError(
-                _("ORM bypass error: %s") % sql_err.pgerror)
+                _("ORM bypass error: %r") % sql_err.pgerror)
 
     def _update_line(self, vals):
         """ Do raw update into database because ORM is awfully slow
