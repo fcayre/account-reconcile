@@ -113,7 +113,7 @@ class StripeParser(AccountMoveImportParser):
         if line['type'] in ['transfer', 'payout']:
             vals.update({
                 'partner_id': self.journal.partner_id.id,
-                'account_id': self.journal.default_debit_account_id.id,
+                'account_id': self.journal.receivable_account_id.id,
                 'already_completed': True,
                 })
         elif line['type'] == 'fee':
