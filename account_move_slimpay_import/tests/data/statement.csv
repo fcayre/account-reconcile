@@ -1,0 +1,16 @@
+"Ligne";"Dateexecution";"TransactionID";"ReferenceClient";"Nomdebiteur";"CodeOP";"Montant";"Datevaleur";"Creditvaleur";"Debitvaleur";"Libelle";"Referencefacture";"OriginalTransactionID";
+"2128";"2020-02-10";;"Commown";
+
+;;;;"Ancien solde";;;"2020-01-01";"2003.56";
+
+"1";"2020-01-17";"SDD-EXE-20200116-00000001";"6";"Test partner";"SDD";"30.00";"2020-01-20";"30.00";;"Du 16/01/2020 au 15/02/2020 - Facture no FAC/20010384 - Formule Premium";"N/A";
+"2";"2020-01-21";"RET-FEE-20200117-10587838";"commown";"Commown";"FEE-RET";;"2020-01-20";;"0.96";"Frais de retour de 1 prelevement(s) a 0.800 euro HT l'unite";"N/A";
+"3";"2020-01-22";"RET-EXE-20200120-10610812";"6";"Test partner";"RET";"-30.00";"2020-01-20";;"30.00";"R-Transaction : AM04 - Provision insuffisante";"N/A";"SDD-EXE-20200116-00000001";
+"4";"2020-01-25";"SDD-FEE-20200120-10579581";"commown";"Commown";"FEE-SDD";;"2020-01-20";;"2.60";"Frais d'execution de 10 prelevement(s) a 0.260 euro +0.04 (au-dessus de 500,00) HT l'unite";"N/A";
+;;;;"TOTAL";;"63195.45";"2020-02-01";"67124.17";"68070.31";
+
+;;;;"Nouveau solde";;;"2020-02-01";;"2000.00";;
+;;;;"Virements/Remboursements en cours";;;"2020-02-01";;"0.00";;
+;;;;"Frais en cours";;;"2020-02-01";;"0.00";;
+;;;;"Pied de compte";;;"2020-02-01";;"500.00";;
+;;;;"Fonds disponibles";;;"2020-02-01";;"1500.00";;
